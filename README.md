@@ -31,7 +31,7 @@ Các bước thực hiện:
 
 ### Shellcode
 
-Shellcode được viết bằng C, tuy nhiên không có các hàm init C, không dùng import, dùng biến local trong stackframe và compiler sử dụng địa chỉ tương đối (ví dụ call, mov,... tương đối) nên ta có thể dump code ra từ file pe đã compiled làm shellcode
+Shellcode được viết bằng C, tuy nhiên không có các hàm init C, không dùng import, dùng biến local trong stackframe và compiler sử dụng địa chỉ tương đối (ví dụ call, jmp,... tương đối) nên ta có thể dump code ra từ file pe đã compiled làm shellcode
 
 Các bước thực hiện:
 - sử dụng kỹ thuật [PEB walking](https://fareedfauzi.github.io/2024/07/13/PEB-Walk.html) để resolve API  `LoadLibraryA`
