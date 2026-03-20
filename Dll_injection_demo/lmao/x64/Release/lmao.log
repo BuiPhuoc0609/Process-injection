@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  dllmain.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  lmao.vcxproj -> D:\ADMIN\rev-bin\projects\Dll_injection_demo\x64\Release\lmao.dll
