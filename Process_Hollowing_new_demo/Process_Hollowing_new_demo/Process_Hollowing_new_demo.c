@@ -10,7 +10,7 @@ int main() {
     si.cb = sizeof(si);
     char target[] = "cmd.exe";
     CreateProcessA(NULL, target, NULL, NULL, FALSE, CREATE_SUSPENDED, NULL, NULL, &si, &pi);
-\
+    
     PROCESS_BASIC_INFORMATION pbi = { 0 };
     NtQueryInformationProcess(pi.hProcess, ProcessBasicInformation, &pbi, sizeof(pbi), NULL);
     
