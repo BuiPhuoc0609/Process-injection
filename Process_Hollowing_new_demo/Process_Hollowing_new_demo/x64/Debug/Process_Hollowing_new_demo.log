@@ -1,0 +1,14 @@
+﻿  Process_Hollowing_new_demo.cpp
+D:\ADMIN\rev-bin\projects\Process_Hollowing_new_demo\Process_Hollowing_new_demo\Process_Hollowing_new_demo.cpp(11,2): error C2664: 'BOOL CreateProcessA(LPCSTR,LPSTR,LPSECURITY_ATTRIBUTES,LPSECURITY_ATTRIBUTES,BOOL,DWORD,LPVOID,LPCSTR,LPSTARTUPINFOA,LPPROCESS_INFORMATION)': cannot convert argument 2 from 'const char [8]' to 'LPSTR'
+  D:\ADMIN\rev-bin\projects\Process_Hollowing_new_demo\Process_Hollowing_new_demo\Process_Hollowing_new_demo.cpp(11,23):
+  Conversion from string literal loses const qualifier (see /Zc:strictStrings)
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\processthreadsapi.h(370,1):
+  see declaration of 'CreateProcessA'
+  D:\ADMIN\rev-bin\projects\Process_Hollowing_new_demo\Process_Hollowing_new_demo\Process_Hollowing_new_demo.cpp(11,2):
+  while trying to match the argument list '(int, const char [8], int, int, int, int, int, int, STARTUPINFOA *, PROCESS_INFORMATION *)'
+  
+D:\ADMIN\rev-bin\projects\Process_Hollowing_new_demo\Process_Hollowing_new_demo\Process_Hollowing_new_demo.cpp(27,39): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
+D:\ADMIN\rev-bin\projects\Process_Hollowing_new_demo\Process_Hollowing_new_demo\Process_Hollowing_new_demo.cpp(27,39): warning C4302: 'type cast': truncation from 'LPVOID' to 'DWORD'
+D:\ADMIN\rev-bin\projects\Process_Hollowing_new_demo\Process_Hollowing_new_demo\Process_Hollowing_new_demo.cpp(27,19): warning C4312: 'type cast': conversion from 'unsigned long' to 'PIMAGE_NT_HEADERS' of greater size
+D:\ADMIN\rev-bin\projects\Process_Hollowing_new_demo\Process_Hollowing_new_demo\Process_Hollowing_new_demo.cpp(38,2): error C3861: 'NtCreateSection': identifier not found
+D:\ADMIN\rev-bin\projects\Process_Hollowing_new_demo\Process_Hollowing_new_demo\Process_Hollowing_new_demo.cpp(39,2): error C3861: 'NtMapViewOfSection': identifier not found
