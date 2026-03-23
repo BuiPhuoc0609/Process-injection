@@ -124,7 +124,7 @@ VirtualProtectEx(pi.hProcess, hostEntryPoint, sizeof(patch), PAGE_EXECUTE_READWR
 WriteProcessMemory(pi.hProcess, hostEntryPoint, patch, sizeof(patch), NULL);
 ```
 
-Để Windows loader có thể resolve import thì ta phải sủa `ImageBaseAddress` của PEB thành base mới do `NtMapViewOfSection` trả về, khi main thraed được resume thì iat sẽ được resolve
+Để Windows loader có thể resolve import thì ta phải sửa `ImageBaseAddress` của PEB thành base mới do `NtMapViewOfSection` trả về, khi main thread được resume thì iat sẽ được resolve
 
 Có thể kết hợp set file information `Delete Pending` như kỹ thuật process ghosting để tránh file malware chưa kịp inject thì đã bị quét và xóa
 
@@ -140,7 +140,7 @@ IAT của image cũ (cmd.exe) không được resolve:
 
 <img width="1919" height="1005" alt="image" src="https://github.com/user-attachments/assets/26e2e680-456b-4e5f-ac82-34d4082db6dd" />
 
-Image mới đã được resolve IAT vìa sửa ImageBase trong PEB:
+Image mới đã được resolve IAT vì sửa ImageBase trong PEB:
 
 <img width="1912" height="1007" alt="image" src="https://github.com/user-attachments/assets/c3e27512-2da3-4492-9a42-e955ac4a9b1a" />
 
